@@ -1,0 +1,32 @@
+<!--
+  <p *ngFor="let abone of abones">
+  {{abone.id}} - {{abone.tcKimlikNo}} - {{abone.adSoyad}} - {{abone.sozlesmeNo}} - {{abone.adres}}
+  </p>
+ Sqliteden veri çekerken yazılan kod
+--> 
+
+<!--Verilerin Tablo Şekilden Gösterimi-->
+<br><!-- <br> alt satıra iner-->
+<div style="text-align: center;" class="container">
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>TC Kimlik No</th>
+        <th>Ad Soyad</th>
+        <th>Sözleşme No</th>
+        <th>Adres</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let abone of abones">
+        <td>{{abone.id}}</td>
+        <td>{{abone.tcKimlikNo}}</td>
+        <td>{{abone.adSoyad}}</td>
+        <td>{{abone.sozlesmeNo}}</td>
+        <td>{{abone.adres}}</td> 
+      </tr>
+    </tbody>
+  </table>
+
+</div>
